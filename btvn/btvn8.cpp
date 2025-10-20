@@ -1,17 +1,20 @@
 #include <stdio.h>
 
-int main() {
-    int number = 12345;
-    int result = 0;
-    int digit;
+int main (){
+	int n , a , b , c , d ,  nghichdao ; 
+	printf("nhap so nguyen bat ki co 4 chu so  : "); 
+	scanf("%d",&n); 
+	a=(n/1000) ; 
+	b= (n/100) % 10 ; 
+	c=(n/10) % 10 ; 
+	d=  n  % 10 ; 
+	
+	
+    nghichdao = d * 1000 + c * 100 + b * 10 + a; 
+	printf("So nghich dao la: %d\n", nghichdao);
+	
 
-    while (number > 0) {
-        digit = number % 10;         // lay chu so cuoi  
-        result = result * 10 + digit; // ghep vao ket qua  
-        number = number / 10;         // bo chu so cuoi  
-    }
-
-    printf("So dao nguoc la: %d\n", result);
-
-    return 0;
-}
+	
+	return 0 ;  
+	 
+} 

@@ -1,13 +1,18 @@
 #include <stdio.h>
 
 int main (){
-	int num1 = 10;
-	int num2 = 20;
-	int num3=30;
+	float chieudai , chieurong ; 
+	float dientich ;  
 	
-	// khai bao bien tong 
-	int tong = num1+num2+num3 ; 
-	printf("dap an la %d ", tong ) ; 
+	printf("nhap do dai chieudai : ") ;
+	scanf("%f", &chieudai ); 
+	printf("nhap do dai chieu rong : ") ; 
+	scanf("%f", &chieurong); 
+	// cong thuc tinh do dai 
+	
+	dientich= chieudai * chieurong ; 
+	
+	printf("dien tích là %2f ", dientich ) ; 
 	
 	return 0 ;  
 } 

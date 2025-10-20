@@ -1,13 +1,37 @@
 #include <stdio.h>
+#include <math.h> 
 
-int main (){
-	int chieudai = 5 ;
-	int chieurong = 10 ;
+int main() {
+	float  toan , van , anh ; 
+	float  tong , trungbinh ;   
+	printf("nhap so diem toan : ") ; 
+	scanf("%f",&toan) ; 
+	printf( "nhap so diem van : "); 
+	scanf("%f",&van); 
+	printf ("nhap so diem anh : "); 
+	scanf("%f",&anh ); 
 	
-	// khai bao tinh dien tich cua hinh chu nhat 
-	int tinh = chieudai * chieurong ;
-	printf("dien tich cua hinh chu nhat la %d ", tinh  );
+	// cong thuc tinh tong va diem trung binh 
 	
-	return 0 ;  
+	tong = toan + van + anh ;
+	trungbinh= tong / 3 ; 
+	printf("tong diem = %2f\n ", tong );
+	printf("diem trung binh = %2f\n ", trungbinh); 
+	
+	return 0 ;   
+	
+
+	
+	
+	
+	
+	
 	 
- } 
+	 
+ 
+	 
+   
+
+    return 0;
+}
+

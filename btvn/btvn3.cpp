@@ -1,29 +1,24 @@
-#include <stdio.h>
+#include <stdio.h> 
+#include <math.h> 
 
-int main(){
-	int num1 = 10 ;
-	int num2 = 20  ;
-	
-	// toan tu + 
-	int tong = num1 + num2 ; 
-	printf("phep tong la %d \n" , tong ) ;
-	
-	// toan tu -
-	int hieu = num1-num2;
-	printf("phep tong la  %d ", hieu); 
 
-	// toan tu * 
-	int tinh = num1 * num2 ;
-	printf("phep nhan la %d ", tinh );
+int main (){
+	double r , chuvi , dientich  ; 
+	printf("nhap ban kinh hinh tron  : "); 
 	
+	scanf("%lf",&r); // nhap gia tri ban kinh 
 	
-	// phep chia / 
-	int thuong = num1 / num2 ;
-	printf("phep chia / %d ", thuong );
+	chuvi = 2 * M_PI * r ; // tinh chu vi  
+	dientich = M_PI *r *r ;// tinh dien tich  
 	
-	
+	printf("chu vi hinh tron : %2lf\n ", chuvi ); 
+	printf("dien tich hinh tron : %2lf\n", dientich );  
 
+	
+	
 	
 	return 0 ;  
-    
+	
+	 
+	
 } 
