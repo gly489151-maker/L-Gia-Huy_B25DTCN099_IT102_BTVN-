@@ -1,21 +1,15 @@
-#include <stdio.h>
+#include <stdio.h> 
 
 int main(){
-	int  n , a , b , c , d , tong ; 
-	printf("nhap so nguyen bat ki : ") ; 
-	scanf("%d",&n);
-	a=(n/1000) ; 
-	b=(n/100) % 10  ; 
-	c=(n/10) % 10  ; 
-	d=n%10 ; 
-			
-	tong = a + b + c + d ; // tinh tong abcd 
+	int years ; 
+	printf(" yeu cau nguoi dung nhap 1 so nguyen dai dien cho nam : "); 
+	scanf("%d",&years );
 	
-	printf("tong cac chu so cua  %d\n la : %d ", n , tong ) ; 
+	if ((years % 4 == 0 && years % 100 != 0 ) || (years % 400 == 0 )){
+		printf(" nam day la nam nhuan  ", years ); 
+	}else {
+		printf("nam day la nam khong nhuan ", years ); 
+	}
 	
 	return 0 ;  
-	 
-
-	
-	 
 } 

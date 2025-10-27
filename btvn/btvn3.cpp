@@ -1,24 +1,20 @@
-#include <stdio.h> 
-#include <math.h> 
+#include <stdio.h>
 
-
-int main (){
-	double r , chuvi , dientich  ; 
-	printf("nhap ban kinh hinh tron  : "); 
+int main(){
+	int n ;
+	printf("nhap so bat ki : "); 
+	scanf("%d",&n);
 	
-	scanf("%lf",&r); // nhap gia tri ban kinh 
-	
-	chuvi = 2 * M_PI * r ; // tinh chu vi  
-	dientich = M_PI *r *r ;// tinh dien tich  
-	
-	printf("chu vi hinh tron : %2lf\n ", chuvi ); 
-	printf("dien tich hinh tron : %2lf\n", dientich );  
-
-	
-	
+	if (n%3==0){
+		printf("so tren chia het cho 3 "); 
+	} 
+	if (n%5==0){
+		printf("so tren chia het cho 5 "); 
+	}
+	if (n%3==0 && n%5==0){
+		printf("so tren chia het cho ca 3 va 5 "); 
+	} 
+ 
 	
 	return 0 ;  
-	
-	 
-	
 } 

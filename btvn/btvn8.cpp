@@ -1,20 +1,31 @@
 #include <stdio.h>
 
-int main (){
-	int n , a , b , c , d ,  nghichdao ; 
-	printf("nhap so nguyen bat ki co 4 chu so  : "); 
-	scanf("%d",&n); 
-	a=(n/1000) ; 
-	b= (n/100) % 10 ; 
-	c=(n/10) % 10 ; 
-	d=  n  % 10 ; 
-	
-	
-    nghichdao = d * 1000 + c * 100 + b * 10 + a; 
-	printf("So nghich dao la: %d\n", nghichdao);
-	
+int main() {
+    int a, b, c;
 
-	
-	return 0 ;  
-	 
-} 
+    printf("nhap do dai canh a: ");
+    scanf("%d", &a);
+
+    printf("nhap do dai canh b: ");
+    scanf("%d", &b);
+
+    printf("nhap do dai canh c: ");
+    scanf("%d", &c);
+
+    // kiem tra 3 canh > 0
+    if (a <= 0 || b <= 0 || c <= 0) {
+        printf("ban da nhap sai moi ban nhap lai");
+        return 0; // ket thuc chuong trinh neu sai
+    }
+
+    // kiem tra dieu kien tam giac
+    if (a + b > c && a + c > b && b + c > a) {
+        printf("day la tam giac ");
+    } else {
+        printf("day khong phai la tam giac");
+    }
+
+    return 0;
+}
+
+
