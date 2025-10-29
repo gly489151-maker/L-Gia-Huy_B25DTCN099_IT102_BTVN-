@@ -1,15 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-	int a ; 
-	printf("nhap so nguyen duong bat ki : ");
-	scanf("%d",&a) ; 
+int main (){
+	int n ;  
+	int tong = 0 ; 
 	
-	if (a>0){
-		printf("so duong") ;  
-	} 
-	if (a<0){
-		printf("so am ");  
-	} 
-return 0 ;  
-}
+	printf (" Nhap N =  ");
+	scanf ("%d",&n);  
+	
+	for (int i = 1 ; i <= n ; i ++ ){
+		tong += i ; // tong = tong + 1  
+	}
+	 printf ( " ket qua la : %d\n", tong ) ;
+	 return 0 ;  
+} 

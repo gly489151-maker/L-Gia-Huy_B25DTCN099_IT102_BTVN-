@@ -1,20 +1,30 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main(){
-	int n ;
-	printf("nhap so bat ki : "); 
-	scanf("%d",&n);
+int main (){
+	int n ; 
+	 
+	printf ("nhap so nguyen n : ");
+	scanf ("%d",&n);
 	
-	if (n%3==0){
-		printf("so tren chia het cho 3 "); 
-	} 
-	if (n%5==0){
-		printf("so tren chia het cho 5 "); 
+	if ( n < 1 || n > 10 ){
+		printf("gia tri khong hop le \n ");
 	}
-	if (n%3==0 && n%5==0){
-		printf("so tren chia het cho ca 3 va 5 "); 
-	} 
- 
 	
-	return 0 ;  
-} 
+	while(n < 1 || n > 10 ){
+		printf ("bang cuu chuong /n "); 
+	}
+	
+	for (int i = 1 ; i <= 9 ; i ++ ){
+		printf("%d x %d = %d\n ",n , i , n* i );
+	}
+          
+
+
+
+
+
+
+
+
+	return 0 ; 
+}
