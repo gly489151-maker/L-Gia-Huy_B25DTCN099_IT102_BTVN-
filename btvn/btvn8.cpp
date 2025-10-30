@@ -1,27 +1,35 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    printf("Nhap so nguyen: ");
-    scanf("%d", &n);
+    long n;        
+    int x;         
+    int dem = 0;   
+    
+    printf("Nhap so n: ");
+    scanf("%ld", &n);
 
-    int temp = n; 
-    int dao = 0;
+    printf("Nhap chu so x (0-9): ");
+    scanf("%d", &x);
 
-    // Ð?o s? ð? in ðúng th? t? t? trái sang ph?i
-    while (temp != 0) {
-        int digit = temp % 10;
-        dao = dao * 10 + digit;
-        temp /= 10;
+   
+    if (n < 0) {
+        n = -n;
     }
 
-    // In t?ng ch? s?
-    printf("Cac chu so: ");
-    while (dao != 0) {
-        int digit = dao % 10;
-        printf("%d ", digit);
-        dao /= 10;
+    // N?u n = 0 và x = 0 
+    if (n == 0 && x == 0) {
+        dem = 1;
+    } else {
+        while (n > 0) {
+            int chuSo = n % 10; 
+            if (chuSo == x) {
+                dem++;          
+            }
+            n = n / 10;          
+        }
     }
+
+    printf("Chu so %d xuat hien %d lan trong so da nhap.\n", x, dem);
 
     return 0;
 }

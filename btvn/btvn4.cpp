@@ -1,50 +1,25 @@
 #include<stdio.h>
 
-int main(){
-	int  choice  ; 
-	float a , b ;  
+int main (){
+	int chieuDai , chieuRong ; 
 	
-	printf("nhap so thu nhat : ");
-	scanf ("%f",&a ); 
+	printf("Nhap so chieu dai : ");
+	scanf("%d",&chieuDai);
 	
-	printf("nhap so thu hai : ");
-	scanf("%f",&b);
+	printf("Nhap so chieu rong : ");
+	scanf("%d",&chieuRong);
 	
-	do{
-		printf("\n=======MENU=======\n");
-		printf("1. Tong hai so \n ");
-		printf("2. Hieu hai so \n");
-		printf("3. Tich hai so \n");
-		printf("4. Thuong hai so \n ");
-		printf("5. Thoat \n "); 
-		printf("Moi ban nhap ket qua o day : ");
-		scanf("%d",&choice);
-		
-		switch(choice){
-			case 1 : 
-			  printf("Tong= %.2f\n", a + b  );
-			  break ;  
-			case 2 : 
-			  printf("Hieu = %.2f\n", a-b); 
-			  break ;  
-			case 3 :
-			  printf("Tich = %.2f\n", a * b);
-			  break ;
-			case 4 : 
-			  printf("Thuong = %.2f\n ", a / b );
-			  break ; 
-			case 5 : 
-			  printf("Ban da thoat chuong trinh \n ");
-			  break ;  
-			default : 
-			  printf("Moi ban nhap lai ! \n ") ; 
-			
-			
-			 	
-			  
-		}    
-	}while (choice != 5 ) ; 
+	for ( int i = 1 ; i <= chieuDai ; i++){
+		for (int j = 1 ; j <=chieuRong ; j ++ ){
+			printf("*"); 
+		} 
+		printf("\n"); 
+	} 
 	
-	return 0 ;  
 	
+	
+	
+	
+	
+	return 0 ; 
 } 

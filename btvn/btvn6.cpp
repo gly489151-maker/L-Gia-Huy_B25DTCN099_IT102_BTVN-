@@ -1,21 +1,16 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main(){
-	int a , b ,  bcnn ; 
+int main (){
+	int n , reserved  = 0 , digit  ; 
 	
-	printf("Nhap a : ");
-	scanf("%d",&a);
+	printf("nhap so nguyen n : ");
+	scanf("%d",&n);
 	
-	printf("Nhap b : ");
-	scanf("%d",&b); 
-	
-     for (int i = (a > b ? a : b); ; i++) {
-        if (i % a == 0 && i % b == 0) {
-            bcnn = i;
-            break; // t?m th?y BCNN th? d?ng v?ng l?p
-        }
-    }
-        printf("BCNN = %d\n", bcnn);
-	  
-	  return 0 ;  
+	while (n!= 0 ){
+		digit = n % 10 ; 
+		reserved = reserved * 10 + digit ; 
+		n = n / 10 ;  
+	}
+	 printf("So dao nguocla : %d",reserved);
+	 return 0 ;  
 } 
