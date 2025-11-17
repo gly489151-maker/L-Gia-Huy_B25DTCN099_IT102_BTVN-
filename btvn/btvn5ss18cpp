@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void update(int *arr, int pos, int value){
+    arr[pos] = value;
+}
+
+void printArray(int *arr, int n){
+    for(int i = 0; i < n; i++){
+        printf("%d ", arr[i]);
+    }
+}
+
+int main(){
+    int a[] = {3, 6, 9, 12, 15};
+    int n = 5;
+
+    update(a, 2, 99);
+
+    printArray(a, n);
+
+    return 0;
+}
+
